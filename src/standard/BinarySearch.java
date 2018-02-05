@@ -1,17 +1,10 @@
-package algorithm;
+package standard;
 
 public class BinarySearch {
 
-	public static void main(String[] args) {
-		int[] a = new int[] { 1, 2, 3, 4, 5, 6, 7, 9 };
-		// index of element
-		System.out.println(binarySearch(0, a.length - 1, a, 7));
-		System.out.println(binarySearch2(0, a.length - 1, a, 7));
-		System.out.println(binarySearch(0, a.length - 1, a, 8));
-		System.out.println(binarySearch2(0, a.length - 1, a, 8));
-	}
-
-	// recursive
+	/**
+	 * recursive
+	 */
 	public static int binarySearch(int left, int right, int[] a, int value) {
 		if (left <= right) {
 			int mid = (left + right) / 2;
@@ -25,7 +18,9 @@ public class BinarySearch {
 		return -1; // error index
 	}
 
-	// non-recursive
+	/**
+	 * non-recursive
+	 */
 	public static int binarySearch2(int left, int right, int[] a, int value) {
 		while (left <= right) {
 			int mid = (left + right) / 2;
@@ -38,4 +33,13 @@ public class BinarySearch {
 		}
 		return -1; // error index
 	}
+
+	public static void main(String[] args) {
+		int[] a = new int[] { 1, 2, 3, 4, 5, 6, 7, 9 };
+		System.out.println(binarySearch(0, a.length - 1, a, 9)); // 7
+		System.out.println(binarySearch2(0, a.length - 1, a, 9)); // 7
+		System.out.println(binarySearch(0, a.length - 1, a, 8)); // -1
+		System.out.println(binarySearch2(0, a.length - 1, a, 8)); // -1
+	}
+
 }

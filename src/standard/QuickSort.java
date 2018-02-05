@@ -1,4 +1,4 @@
-package algorithm;
+package standard;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -24,30 +24,34 @@ public class QuickSort {
 
 	public static int partition(int[] a, int left, int right) {
 		int p = a[left];
+		
 		while (left < right) {
-			while (left < right && p <= a[right]) {
+			while (left < right && p <= a[right])
 				right--;
-			}
+			
 			a[left] = a[right];
-			while (left < right && p >= a[left]) {
+			
+			while (left < right && p >= a[left])
 				left++;
-			}
+			
 			a[right] = a[left];
 		}
+		
 		a[left] = p;
 		return left;
 	}
 	
 	/*
-	 * choose one from a[i] to a[j] randomly,
-	 * then swap with a[i]
+	 * choose one from a[i] to a[j] randomly, then swap with a[i]
 	 */
 	public static int RandomizedPartition(int[] a, int i, int j) {
 		int len = j - i + 1;
 		int index = random.nextInt(len) + i;
+		
 		int temp = a[i];
 		a[i] = a[index];
 		a[index] = temp;
+		
 		return partition(a, i, j);
 	}
 }
