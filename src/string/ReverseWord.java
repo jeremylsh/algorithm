@@ -19,6 +19,10 @@ public class ReverseWord {
 		return sb.toString().substring(0, sb.length() - 1);
 	}
 	
+	public static String reverse2(String str) {
+		return null; // TODO
+	}
+	
 	public static void main(String[] args) {
 		String word = "I am a liar.";
 		System.out.println(reverse(word));

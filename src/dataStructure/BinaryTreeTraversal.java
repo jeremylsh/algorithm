@@ -68,7 +68,7 @@ public class BinaryTreeTraversal {
 	/**
 	 * 非递归中序遍历
 	 * 1.循环将当前结点和其左儿子压栈
-	 * 2.
+	 * 2.直到没有左儿子，弹栈输出，并指向它的兄弟结点
 	 */
 	public static void inOrderTraversal(TreeNode root) {
 		if (root == null)
