@@ -58,7 +58,7 @@ public class BinaryTreeTraversal {
 	 * 递归先序遍历，递归写法其余两种类似
 	 */
 	public static void preOrderTraversal(TreeNode treeNode) {
-		if (treeNode != null && treeNode.data != 0) {
+		if (treeNode != null) { // treeNode.data不会为0
 			System.out.print(" " + treeNode.data);
 			preOrderTraversal(treeNode.left);
 			preOrderTraversal(treeNode.right);
@@ -170,7 +170,7 @@ public class BinaryTreeTraversal {
 		postOrderTraversal(root); // 9 4 5 2 6 7 3 1
 		
 		System.out.print("\nreverse:");
-		reverse(root);
+		reverse(root); // 1 3 2 7 6 5 4 9
 	}
 	
 }

@@ -52,11 +52,11 @@ public class CircularList {
 		ListNode entrance = new ListNode(3);
 
 		node.add(new ListNode(2))
-			 .add(entrance)
-			 .add(new ListNode(4))
-			 .add(new ListNode(5))
-			 .add(new ListNode(6))
-			 .add(entrance);
+			.add(entrance)
+			.add(new ListNode(4))
+			.add(new ListNode(5))
+			.add(new ListNode(6))
+			.add(entrance);
 
 		System.out.println(getEntrance(node).value); // the entrance is 3
 	}

@@ -15,7 +15,7 @@ public class ListOperation {
 			
 			while (cur != null) {
 				next = cur.next; // 先保存下一个移动目标
-				cur.next = prev; // maintain the relation
+				cur.next = prev; // 维护重建后的关系
 				prev = cur; // prev移动
 				cur = next; // cur移动
 			}
