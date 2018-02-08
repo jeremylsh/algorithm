@@ -7,9 +7,8 @@ public class QuickSort {
 
 	final static Random random = new Random();
 	
-	final static int[] a = new int[] { 5, 4, 3, 2, 1, 2, 3, 4, 5 };
-	
 	public static void main(String[] args) {
+		int[] a = new int[] { 5, 4, 3, 2, 1, 2, 3, 4, 5 };
 		quickSort(a, 0, a.length - 1);
 		System.out.println(Arrays.toString(a));
 	}

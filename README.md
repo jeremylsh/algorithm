@@ -44,5 +44,6 @@
 8. [MaxSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MaxSum.java)连续子数组的最大和
 9. 数组排成最小的数（TODO）
 10. 两个list的交并补集（TODO）
-11. 和为S（两个数字/连续正数序列）（TODO）
-12. [SumN](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SumN.java) - 不使用乘除求1~n的和
+11. [TwoSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/TwoSum.java) - 和为S的两个数字
+12. [SequenceSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SequenceSum.java) - 和为S的连续正数序列
+13. [SumN](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SumN.java) - 不使用乘除求1~n的和
