@@ -7,12 +7,12 @@
 #### 数据结构
 1. [ListOperation](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/ListOperation.java) - 反转链表 / 合并有序链表
 2. [CircularList](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/CircularList.java) - 链表是否成环 / 成环链表入口
-3. ListNodeKthToTail - 链表倒数第k个结点(TODO)
+3. [FindKthToTail](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/FindKthToTail.java) - 链表倒数第k个结点
 4. [BinaryTreeTraversal](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/BinaryTreeTraversal.java) - BFS / DFS / 反转二叉树 / 先中后遍历（递归+非递归实现）
 5. 树的子结构(TODO)
 6. 两个链表的第一个公共结点（TODO） 
 8. 删除链表重复结点（TODO） 
-9. 用两个栈实现队列（TODO）
+9. [TwoStackQueue](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/TwoStackQueue.java)用两个栈实现队列
 10. BST后序遍历（递归+非递归）（TODO） 
 
 #### 常规算法
