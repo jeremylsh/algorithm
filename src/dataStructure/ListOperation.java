@@ -43,6 +43,27 @@ public class ListOperation {
 		return node;
 	}
 	
+	/**
+	 * 删除结点
+	 */
+	public static void remove(ListNode head, ListNode delNode) {
+		if (delNode == null)
+			return;
+		
+		if (delNode.next != null) { // 1.删除结点不在末尾
+			delNode.value = delNode.next.value; // 直接覆盖
+			delNode.next = delNode.next.next;
+		} else if (delNode == head) { // 2.只有一个结点
+			head = null;
+		} else {
+			ListNode node = head;
+			while (node.next != delNode) { // 3.多个结点的链表删除尾结点，需要找到倒数第二个结点
+				node = node.next;
+			}
+			node.next = null;
+		}
+	}
+	
 	public static void main(String[] args) {
 		ListNode node1 = new ListNode(1);
 		ListNode node2 = new ListNode(2);
@@ -61,6 +82,21 @@ public class ListOperation {
 		
 		node = reverse(node);
 		ListNode.display(node); // 9->8->7->6->5->4->3->2->1->nil
+		
+		// 测试remove
+		ListNode first = new ListNode(1);
+		ListNode mid = new ListNode(3);
+		ListNode last = new ListNode(5);
+		
+		first.add(new ListNode(2)) // 1->2->3->4->5->null
+			 .add(mid)
+			 .add(new ListNode(4))
+			 .add(last);
+		
+		remove(first, first);
+		remove(first, mid);
+		remove(first, last);
+		ListNode.display(first);
 	}
 	
 }
