@@ -19,14 +19,14 @@
 1. [QuickSort](https://github.com/jeremylsh/algorithm/blob/master/src/standard/QuickSort.java) - 随机取基准
 2. [Palindrome](https://github.com/jeremylsh/algorithm/blob/master/src/standard/Palindrome.java) - 回文字符串(DP实现)
 3. [LeastKNumbers](https://github.com/jeremylsh/algorithm/blob/master/src/standard/LeastKNumbers.java) - 数组最小k个数
-4. 旋转数组的最小数字（TODO）
-5. 剪绳子（TODO）
-6. [BestGift](https://github.com/jeremylsh/algorithm/blob/master/src/standard/BestGift.java)礼物最大价值
-7. [MaxSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MaxSum.java)连续子数组的最大和
+4. [MinInRotation](https://github.com/jeremylsh/algorithm/blob/master/src/standard/MinInRotation.java) - 旋转数组的最小数字
+5. [MaxCut](https://github.com/jeremylsh/algorithm/blob/master/src/standard/MaxCut.java) - 剪绳子
+6. [BestGift](https://github.com/jeremylsh/algorithm/blob/master/src/standard/BestGift.java) - 礼物最大价值
+7. [MaxSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MaxSum.java) - 连续子数组的最大和
 
 #### 字符串
 1. [ReplaceSpace](https://github.com/jeremylsh/algorithm/blob/master/src/string/ReplaceSpace.java) - 替换空格
-2. 左旋转字符串（TODO）
+2. [LeftRotateString](https://github.com/jeremylsh/algorithm/blob/master/src/string/LeftRotateString.java) - 左旋转字符串
 3. [ReverseWord](https://github.com/jeremylsh/algorithm/blob/master/src/string/ReverseWord.java) - 翻转单词
 4. 字符串转数字（TODO）
 
