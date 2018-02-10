@@ -18,7 +18,7 @@
 #### 常规算法
 1. [QuickSort](https://github.com/jeremylsh/algorithm/blob/master/src/standard/QuickSort.java) - 随机取基准
 2. [Palindrome](https://github.com/jeremylsh/algorithm/blob/master/src/standard/Palindrome.java) - 回文字符串(DP实现)
-3. 数组最小k个数（TODO）
+3. [LeastKNumbers](https://github.com/jeremylsh/algorithm/blob/master/src/standard/LeastKNumbers.java) - 数组最小k个数
 4. 旋转数组的最小数字（TODO）
 5. 剪绳子（TODO）
 6. 礼物最大价值（TODO）
@@ -40,7 +40,7 @@
 4. [MoreThanHalfNum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MoreThanHalfNum.java) - 数组超过一半的数字//TODO
 5. [FindInMatrix](https://github.com/jeremylsh/algorithm/blob/master/src/skill/FindInMatrix.java) - 二维数组中的查找
 6. [RemoveDuplicate](https://github.com/jeremylsh/algorithm/blob/master/src/skill/RemoveDuplicate.java) - 数组去重
-7. 数组奇偶数顺序（相对位置改变or不变）（TODO）
+7. [ReorderOddEven](https://github.com/jeremylsh/algorithm/blob/master/src/skill/ReorderOddEven.java) - 数组奇偶数顺序（相对位置改变or不变）
 8. [MaxSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MaxSum.java)连续子数组的最大和
 9. 数组排成最小的数（TODO）
 10. 两个list的交并补集（TODO）
