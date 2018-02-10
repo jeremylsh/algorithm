@@ -21,7 +21,7 @@
 3. [LeastKNumbers](https://github.com/jeremylsh/algorithm/blob/master/src/standard/LeastKNumbers.java) - 数组最小k个数
 4. 旋转数组的最小数字（TODO）
 5. 剪绳子（TODO）
-6. 礼物最大价值（TODO）
+6. [BestGift](https://github.com/jeremylsh/algorithm/blob/master/src/standard/BestGift.java)礼物最大价值
 7. [MaxSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MaxSum.java)连续子数组的最大和
 
 #### 字符串
@@ -48,3 +48,4 @@
 11. [TwoSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/TwoSum.java) - 和为S的两个数字
 12. [SequenceSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SequenceSum.java) - 和为S的连续正数序列
 13. [SumN](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SumN.java) - 不使用乘除求1~n的和
+14. [RandomNumbers](https://github.com/jeremylsh/algorithm/blob/master/src/skill/RandomNumbers.java) - 数组随机抽出n个数
