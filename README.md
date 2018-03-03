@@ -38,13 +38,13 @@
 1. [Fibonacci](https://github.com/jeremylsh/algorithm/blob/master/src/skill/Fibonacci.java) - 斐波那契非递归实现
 2. [Josephus](https://github.com/jeremylsh/algorithm/blob/master/src/skill/Josephus.java) - 约瑟夫环
 3. [PrintCircle](https://github.com/jeremylsh/algorithm/blob/master/src/skill/PrintCircle.java) - 环形打印二维数组
-4. [MoreThanHalfNum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MoreThanHalfNum.java) - 数组超过一半的数字//TODO
+4. [MoreThanHalfNum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/MoreThanHalfNum.java) - 数组超过一半的数字
 5. [FindInMatrix](https://github.com/jeremylsh/algorithm/blob/master/src/skill/FindInMatrix.java) - 二维数组中的查找
 6. [RemoveDuplicate](https://github.com/jeremylsh/algorithm/blob/master/src/skill/RemoveDuplicate.java) - 数组去重
 7. [ReorderOddEven](https://github.com/jeremylsh/algorithm/blob/master/src/skill/ReorderOddEven.java) - 数组奇偶数顺序（相对位置改变or不变）
 8. [FirstNotRepeatingChar](https://github.com/jeremylsh/algorithm/blob/master/src/skill/FirstNotRepeatingChar.java) - 第一个只出现一次的字符
 9. 数组排成最小的数（TODO）
-10. 两个list的交并补集（TODO）
+10. [TwoList](https://github.com/jeremylsh/algorithm/blob/master/src/skill/TwoList.java) - 两个list(内部不重复)取交集、并集、差集
 11. [TwoSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/TwoSum.java) - 和为S的两个数字
 12. [SequenceSum](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SequenceSum.java) - 和为S的连续正数序列
 13. [SumN](https://github.com/jeremylsh/algorithm/blob/master/src/skill/SumN.java) - 不使用乘除求1~n的和
