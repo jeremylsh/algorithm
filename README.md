@@ -10,10 +10,8 @@
 3. [FindKthToTail](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/FindKthToTail.java) - 链表倒数第k个结点
 4. [BinaryTreeTraversal](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/BinaryTreeTraversal.java) - BFS / DFS / 反转二叉树 / 先中后遍历（递归+非递归实现）
 5. 树的子结构(TODO)
-6. 两个链表的第一个公共结点（TODO） 
-8. 删除链表重复结点（TODO） 
 9. [TwoStackQueue](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/TwoStackQueue.java)用两个栈实现队列
-10. BST后序遍历（递归+非递归）（TODO） 
+10.[BST](https://github.com/jeremylsh/algorithm/blob/master/src/dataStructure/BST.java) - 判断序列是否为BST的后序遍历 
 
 #### 常规算法
 1. [QuickSort](https://github.com/jeremylsh/algorithm/blob/master/src/standard/QuickSort.java) - 随机取基准
@@ -28,10 +26,9 @@
 1. [ReplaceSpace](https://github.com/jeremylsh/algorithm/blob/master/src/string/ReplaceSpace.java) - 替换空格
 2. [LeftRotateString](https://github.com/jeremylsh/algorithm/blob/master/src/string/LeftRotateString.java) - 左旋转字符串
 3. [ReverseWord](https://github.com/jeremylsh/algorithm/blob/master/src/string/ReverseWord.java) - 翻转单词
-4. 字符串转数字（TODO）
 
 #### 算术
-1. 数值的整数次方（TODO）
+1. [Power](https://github.com/jeremylsh/algorithm/blob/master/src/math/Power.java) - 数值的整数次方
 2. [CountOf1](https://github.com/jeremylsh/algorithm/blob/master/src/math/CountOf1.java) - 二进制中1的个数
 
 #### 套路

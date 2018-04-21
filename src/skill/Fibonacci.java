@@ -17,12 +17,14 @@ public class Fibonacci {
 		if (n <= 2)
 			return 1;
 		
-		int m1 = 1, m2 = 0;
-		for (int i = 2; i < n; i++) {
-			int temp = m1 + m2; // m1'
-			m2 = m1; // m2'
-			m1 = temp; // temp' = m1' + m2'
+		int m1 = 1, m2 = 1;
+		
+		for (int i = 3; i < n; i++) {
+			int t = m1;
+			m1 += m2;
+			m2 = t;
 		}
+		
 		return m1 + m2;
 	}
 
