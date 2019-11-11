@@ -2,12 +2,15 @@ package string;
 
 /**
  * 把字符串最左边k个字符移动到尾部
+ * 
+ * 字符串：abcdefg
+ * 输入：2
+ * 输出：cdefgab
+ * 
+ * 思路：分别翻转A和B两部分，最后整体一起翻转
  */
 public class LeftRotateString {
 
-	/**
-	 * 分别翻转A和B两部分，最后整体一起翻转
-	 */
 	public static String leftRotateString(String str, int k) {
 		if (str == null || str.length() == 0)
 			return null;

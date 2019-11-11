@@ -1,34 +1,50 @@
 package common;
 
 /**
- * 公用链表，所有属性方法对外可见
+ * 链表结点
  */
 public class ListNode {
 
-	public int value; // 0代表结点为空
-	
+	public int value;
 	public ListNode next;
 	
 	public ListNode(int value) {
 		this.value = value;
 	}
 	
-	/**
-	 * 链式添加结点，方便测试
-	 */
 	public ListNode add(ListNode node) {
-		return next = node;
+		this.next = node;
+		return node;
 	}
 	
 	/**
-	 * 遍历打印链表结点
+	 * 数组转链表
+	 */
+	public ListNode(int[] values) {
+		if (values == null || values.length == 0) {
+			return;
+		}
+		
+		ListNode cur = this;
+		for (int i = 0; i < values.length; i++) {
+			cur.value = values[i];
+			// 创建下一个结点
+			if (i + 1 < values.length) {
+				cur.next = new ListNode(values[i + 1]);
+			}
+			cur = cur.next;
+		}
+	}
+	
+	/**
+	 * 打印链表
 	 */
 	public static void display(ListNode node) {
 		while (node != null) {
 			System.out.print(node.value + "->");
 			node = node.next;
 		}
-		System.out.println("nil");
+		System.out.println("null");
 	}
 	
 }

@@ -3,13 +3,12 @@ package skill;
 import java.util.ArrayList;
 
 /**
- * 在递增序列中，查找任意两个数，它们的和为S
+ * 在递增序列中，查找任意两个数，它们的和为S，时间复杂度O(n)
+ * 
+ * 思路：一首一尾两个指针，往中间相遇
  */
 public class TwoSum {
 
-	/**
-	 * 一首一尾两个指针，时间复杂度O(n)
-	 */
 	public static ArrayList<Integer> twoSum(int[] a, int s) {
 		if (a == null || a.length < 2)
 			return null;

@@ -1,14 +1,22 @@
-package standard;
+package dp;
 
 /**
  * 长度为n的绳子剪成m段，求k[0],k[1]...k[m]的最大值(n>1,m>1)
+ * 
+ * 输入：长度n=8
+ * 输出：3*3*2=18
+ * 
+ * 思路
+ * 
+ * 动态规划，时间O(n^2)，空间O(n)：
+ * 1.使用f(n)记录，如果长度是n的最大值
+ * 2.找到状态转换方程，f(n)=max(f(i) * f(n-i))
+ * 
+ * 贪心算法，时间O(1)，空间O(1)：
+ * 策略是尽可能多的剪出长度为3的段，如果长度是4拆成2*2，
  */
 public class MaxCut {
 
-	/**
-	 * 动态规划，时间O(n^2)，空间O(n)
-	 * 状态转换f(n)=max(f(i) * f(n-i))
-	 */
 	public static int maxCut(int n) {
 		if (n < 2)
 			return 0;
@@ -34,10 +42,6 @@ public class MaxCut {
 		return maxs[n];
 	}
 	
-	/**
-	 * 贪心算法，时间O(1)，空间O(1)
-	 * 尽可能多的剪出长度为3的段，如果长度是4拆成2*2
-	 */
 	public static int maxCut2(int n) {
 		if (n < 2)
 			return 0;

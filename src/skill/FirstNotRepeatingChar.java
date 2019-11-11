@@ -4,12 +4,11 @@ import java.util.LinkedHashMap;
 
 /**
  * 找到第一个只出现一次的字符，输出下标
+ * 
+ * 思路：使用LinkedHashMap，空间换时间，时间复杂度O(n)
  */
 public class FirstNotRepeatingChar {
 
-	/**
-	 * 使用LinkedHashMap，空间换时间，时间复杂度O(n)
-	 */
 	public static int firstNotRepeatingChar(char[] cs) {
 		if (cs == null || cs.length == 0)
 			return -1;

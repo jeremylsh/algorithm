@@ -4,32 +4,10 @@ import java.util.Stack;
 import java.util.Vector;
 
 import common.TreeNode;
+import tree.CreateBinaryTree;
 
 public class BinaryTreeTraversal {
 
-	/**
-	 * 非递归 BFS
-	 */
-	public static void breadthFirstSearch(TreeNode root) {
-		if (root == null) 
-			return;
-
-		Vector<TreeNode> vector = new Vector<>();
-		vector.add(root);
-
-		while (!vector.isEmpty()) {
-			TreeNode treeNode = vector.remove(0); // 出队列并输出
-			System.out.print(" " + treeNode.data); 
-			
-			if (treeNode.left != null) {
-				vector.add(treeNode.left);
-			}
-			if (treeNode.right != null) {
-				vector.add(treeNode.right);
-			}
-		}
-	}
-	
 	/**
 	 * 非递归DFS,其实就是先序遍历
 	 */
@@ -125,37 +103,8 @@ public class BinaryTreeTraversal {
 		}
 	}
 	
-	/**
-	 * 反转二叉树,其实就是广度优先遍历
-	 */
-	public static void reverse(TreeNode root) {
-		if (root == null)
-			return;
-
-		Vector<TreeNode> vector = new Vector<>();
-		vector.add(root);
-
-		while (!vector.isEmpty()) {
-			TreeNode treeNode = vector.remove(0);
-			System.out.print(" " + treeNode.data);
-
-			TreeNode temp = treeNode.left; // 使用临时变量来交换左右子结点
-			treeNode.left = treeNode.right;
-			treeNode.right = temp;
-
-			if (treeNode.left != null)
-				vector.add(treeNode.left);
-			
-			if (treeNode.right != null)
-				vector.add(treeNode.right);
-		}
-	}
-	
 	public static void main(String[] args) {
-		TreeNode root = TreeNode.createBinaryTree(0, new int[] { 1, 2, 3, 4, 5, 6, 7, 0, 9 }); // 0是空结点
-		
-		System.out.print("BFS:"); 
-		breadthFirstSearch(root); // 1 2 3 4 5 6 7 9
+		TreeNode root = CreateBinaryTree.createBinaryTree(0, new int[] { 1, 2, 3, 4, 5, 6, 7, 0, 9 }); // 0是空结点
 		
 		System.out.print("\nDFS:"); 
 		depthFirstSearch(root); // 1 2 4 9 5 3 6 7
@@ -169,8 +118,6 @@ public class BinaryTreeTraversal {
 		System.out.print("\npostOrder:");
 		postOrderTraversal(root); // 9 4 5 2 6 7 3 1
 		
-		System.out.print("\nreverse:");
-		reverse(root); // 1 3 2 7 6 5 4 9
 	}
 	
 }

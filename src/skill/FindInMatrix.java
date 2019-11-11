@@ -6,6 +6,11 @@ package skill;
  * 输入一个整数，判断其在不在数组内
  * 
  * Solution：从左下角出发
+ * 
+ * { 1, 2, 8, 9 }
+ * { 2, 4, 9, 12 }
+ * { 4, 7, 10, 13 }
+ * { 6, 8, 11, 15 }
  */
 public class FindInMatrix {
 

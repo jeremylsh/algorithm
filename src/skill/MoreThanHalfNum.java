@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import standard.QuickSort;
+import sort.QuickSort;
 
 /**
  * 查找数组中出现超过一半的数，最优解时间复杂度O(n)

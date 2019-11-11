@@ -1,7 +1,22 @@
-package dataStructure;
+package list;
 
 import common.ListNode;
 
+/**
+ * @description 找到成环链表的入口
+ * @author Jeremy
+ * @date 2019/08/17
+ * 
+ * 链表:
+ * 1 -> 2 -> 3 -> 4 -> 5 -> 6
+ *           |______________|
+ *           
+ * 输出：3
+ * 
+ * 思路：
+ * 1.先找到快慢指针相遇的位置
+ * 2.用两个移速一样的指针，一个从起点出发，一个从相遇点出发
+ */
 public class CircularList {
 
 	/**
@@ -34,6 +49,8 @@ public class CircularList {
 				fast = fast.next.next;
 				slow = slow.next;
 				if (fast == slow) {
+					// 快慢指针会在结点5相遇
+					System.out.println("n1="+fast.value);
 					return fast;
 				}
 			}
