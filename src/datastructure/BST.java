@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 /**
  * 输入一个数组，判断是否是一颗BST的后序遍历序列

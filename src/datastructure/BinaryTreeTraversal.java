@@ -1,7 +1,6 @@
-package dataStructure;
+package datastructure;
 
 import java.util.Stack;
-import java.util.Vector;
 
 import common.TreeNode;
 import tree.CreateBinaryTree;
