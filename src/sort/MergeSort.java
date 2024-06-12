@@ -27,47 +27,61 @@ import java.util.Arrays;
  */
 public class MergeSort {
 
-	public static void merge(int[] as, int[] temp, int leftStart, int leftEnd, int rightStart, int rightEnd) {
+	public void merge(int[] nums, int[] temps, int leftStart, int leftEnd, int rightStart, int rightEnd) {
+		// 记住开始的位置
+		int start = leftStart;
+
+		// 辅助数组的下标
 		int index = leftStart;
-		int size = rightEnd - leftStart + 1;
+
 		// 对比左右两个数组并将较小的数先放到辅助数组
 		while (leftStart <= leftEnd && rightStart <= rightEnd) {
-			if (as[leftStart] <= as[rightStart]) {
-				temp[index++] = as[leftStart++];
+			if (nums[leftStart] <= nums[rightStart]) {
+				temps[index] = nums[leftStart];
+				leftStart++;
+				index++;
 			} else {
-				temp[index++] = as[rightStart++];
+				temps[index] = nums[rightStart];
+				rightStart++;
+				index++;
 			}
 		}
+
 		// 上面的while循环只要有一个数组遍历完了就会停下，这时候还要把左边或者右边剩下的元素补到辅助数组
-		// 两个while只会执行其中一个
+		// 下面的两个while只会执行其中一个
 		while (leftStart <= leftEnd) {
-			temp[index++] = as[leftStart++];
+			temps[index] = nums[leftStart];
+			leftStart++;
+			index++;
 		}
 		while (rightStart <= rightEnd) {
-			temp[index++] = as[rightStart++];
+			temps[index] = nums[rightStart];
+			rightStart++;
+			index++;
 		}
-		
-		// 把辅助数组复制到原数组
-		for (int i = 0; i < size; i++) {
-			as[rightEnd] = temp[rightEnd];
-			rightEnd--;
+
+		// 把辅助数组区间内的值copy到原始数组上
+		for (; start <= rightEnd; start++) {
+			nums[start] = temps[start];
 		}
 	}
 
-	public static void mergeSort(int[] as, int[] temps, int left, int right) {
+	private void mergeSort(int[] as, int[] temps, int left, int right) {
 		if (left < right) {
 			// 从中间把乱序数组一分为二
 			int mid = (left + right) >> 1;
+			// 对半切割，不断切割成有序数组，直到不可再分
 			mergeSort(as, temps, left, mid);
 			mergeSort(as, temps, mid + 1, right);
-			// 重新把两边的有序数组合并
+
+			// 重新把两边的有序数组合并，先写到辅助数组，然后根据下标的左右区间刷到原始数组
 			merge(as, temps, left, mid, mid + 1, right);
 		}
 	}
 
 	public static void main(String[] args) {
 		int[] as = new int[] { 2, 4, 7, 5, 8, 1, 3, 6 };
-		mergeSort(as, new int[as.length], 0, as.length - 1);
+		new MergeSort().mergeSort(as, new int[as.length], 0, as.length - 1);
 		System.out.println(Arrays.toString(as));
 	}
 
