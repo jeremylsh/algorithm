@@ -1,8 +1,6 @@
 package standard;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import sort.QuickSort;
@@ -68,14 +66,35 @@ public class Topk {
 				set.add(a[i]);
 			}
 		}
-		return set.stream().collect(Collectors.toList());
+		return new ArrayList<>(set);
 	}
-	
+
+	public static List<Integer> topk3(int[] a, int k) {
+		// 创建一个大根堆，用于存储 Top K 元素
+		PriorityQueue<Integer> maxHeap = new PriorityQueue<>((o1, o2) -> o2.compareTo(o1));
+
+		for (int num : a) {
+			// 如果堆中的元素数量小于 K，则将当前元素加入堆中
+			if (maxHeap.size() < k) {
+				maxHeap.offer(num);
+			} else {
+				// 如果堆中的元素数量等于 K，并且当前元素小于堆顶元素，则将堆顶元素移除，并加入当前元素
+				if (num < maxHeap.peek()) {
+					maxHeap.poll();
+					maxHeap.offer(num);
+				}
+			}
+		}
+
+		return maxHeap.stream().sorted().collect(Collectors.toList());
+	}
+
 	public static void main(String[] args) {
 		int[] array = { 4, 5, 1, 6, 2, 7, 3, 8 };
 		int k = 5;
-		
-		System.out.println(topk(array, k)); // 1, 2, 3, 4
-		System.out.println(topk2(array, k)); // 1, 2, 3, 4
+		System.out.println(topk(array, k)); // [3, 2, 1, 4, 5]
+		System.out.println(topk2(array, k)); // [1, 2, 3, 4, 5]
+		System.out.println(topk3(array, k)); // [1, 2, 3, 4, 5]
+
 	}
 }
